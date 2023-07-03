@@ -1,0 +1,5 @@
+PyPDF2==1.26.0
+openai==0.27.0
+streamlit==088.0
+langchain==0.1.0
+python-dotenv==0.19.2
