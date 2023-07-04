@@ -1,6 +1,9 @@
 import openai
+from dotenv import load_dotenv
+import os
 
-openai.api_key = "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"  # 将第二步获取的密钥填写到这里
+load_dotenv()
+openai.api_key = os.environ["OPENAI_API_KEY"]
 
 
 completion = openai.ChatCompletion.create(

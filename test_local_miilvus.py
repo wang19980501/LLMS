@@ -1,12 +1,13 @@
 from os import environ
 import gradio as gr
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 MILVUS_HOST = "localhost"
 MILVUS_PORT = "19530"
-OPENAI_API_KEY = "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"
 
-## Set up environment variables
-environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import Milvus
