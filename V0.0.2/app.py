@@ -8,6 +8,8 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
+openai.api_key = os.environ["OPENAI_API_KEY"]
+# openai.api_base = os.environ["OPENAI_API_BASE"]
 
 # 读取data文件夹中的PDF文件
 
@@ -32,6 +34,7 @@ text_splitter = CharacterTextSplitter(
     separator="\n", chunk_size=1000, chunk_overlap=200, length_function=len
 )
 chunks = text_splitter.split_text(text)
+# print(os.environ["OPENAI_API_BASE"])
 
 # 创建嵌入向量
 embeddings = OpenAIEmbeddings()
@@ -55,29 +58,33 @@ def prompt(query):
     return prompt
 
 
-if user_input:
-    st.markdown("----")
-    res_box = st.empty()
-    report = []
-    content = prompt(user_input)
-    content = f"已知信息：{content}，我提问的是estun机器人相关的知识,根据已知信息回答下列问题：{user_input},并用中文回答"
-    print(content)
+def main():
+    if user_input:
+        st.markdown("----")
+        res_box = st.empty()
+        report = []
+        content = prompt(user_input)
+        content = f"已知信息：{content}，我提问的是estun机器人相关的知识,根据已知信息回答下列问题：{user_input},并用中文回答"
+        print(content)
 
-    # 使用 ChatGPT 进行对话
-    completion = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo-16k",
-        messages=[
-            {"role": "system", "content": "You're an assistant."},
-            {"role": "user", "content": f"{content}"},
-        ],
-        stream=True,
-        temperature=0,
-    )
+        # 使用 ChatGPT 进行对话
+        completion = openai.ChatCompletion.create(
+            model="gpt-3.5-turbo-16k",
+            messages=[
+                {"role": "system", "content": "You're an assistant."},
+                {"role": "user", "content": f"{content}"},
+            ],
+            stream=True,
+            temperature=0,
+        )
 
-    for line in completion:
-        if "content" in line["choices"][0]["delta"]:
-            report.append(line["choices"][0]["delta"]["content"])
-        result = "".join(report).strip()
-        res_box.markdown(f"{result}")
+        for line in completion:
+            if "content" in line["choices"][0]["delta"]:
+                report.append(line["choices"][0]["delta"]["content"])
+            result = "".join(report).strip()
+            res_box.markdown(f"{result}")
 
-    st.markdown("----")
+        st.markdown("----")
+
+if __name__ == "__main__":
+    main()
