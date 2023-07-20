@@ -1,0 +1,999 @@
+2023-07-11 13:54:18,152 [INFO] [models.py:559] 正在加载OpenAI模型: gpt-3.5-turbo
+2023-07-11 13:54:18,152 [INFO] [models.py:612] 模型设置为了： gpt-3.5-turbo
+2023-07-11 13:54:18,826 [INFO] [utils.py:473] 您的IP区域：Japan。
+2023-07-11 13:54:18,947 [INFO] [ChuanhuChatbot.py:484] [42m
+川虎的温馨提示：访问 http://localhost:7860 查看界面[0m
+2023-07-11 13:54:20,454 [INFO] [models.py:559] 正在加载OpenAI模型: gpt-3.5-turbo
+2023-07-11 13:54:20,454 [INFO] [models.py:612] 模型设置为了： gpt-3.5-turbo
+2023-07-11 13:54:20,524 [INFO] [models.py:559] 正在加载OpenAI模型: gpt-3.5-turbo
+2023-07-11 13:54:20,524 [INFO] [models.py:612] 模型设置为了： gpt-3.5-turbo
+2023-07-11 13:55:03,201 [INFO] [models.py:559] 正在加载OpenAI模型: gpt-3.5-turbo
+2023-07-11 13:55:03,201 [INFO] [models.py:612] 模型设置为了： gpt-3.5-turbo
+2023-07-11 13:55:03,250 [INFO] [models.py:559] 正在加载OpenAI模型: gpt-3.5-turbo
+2023-07-11 13:55:03,250 [INFO] [models.py:612] 模型设置为了： gpt-3.5-turbo
+2023-07-11 14:38:39,260 [INFO] [base_model.py:378] 用户的输入为：[34mcolumn reference "id" is ambiguous[0m
+2023-07-11 14:39:05,154 [INFO] [base_model.py:442] 回答为：[34mThe error message "column reference 'id' is ambiguous" means that the table or tables being referenced in the query have multiple columns with the same name 'id', and the database engine cannot determine which one to use.
+
+To resolve this ambiguity, you can specify the table name or alias along with the column name in your query. For example, if you have two tables 'table1' and 'table2', both with a column named 'id', you can modify your query like this:
+
+SELECT table1.id, table2.id
+FROM table1
+JOIN table2 ON table1.id = table2.id;
+
+This will explicitly specify which 'id' column you want to retrieve, avoiding the ambiguity error. Make sure to replace 'table1' and 'table2' with the actual table names in your query.[0m
+2023-07-11 14:40:41,760 [INFO] [models.py:559] 正在加载OpenAI模型: gpt-3.5-turbo
+2023-07-11 14:40:41,761 [INFO] [models.py:612] 模型设置为了： gpt-3.5-turbo
+2023-07-11 14:40:44,759 [INFO] [utils.py:473] 您的IP区域：Japan。
+2023-07-11 14:40:44,935 [INFO] [ChuanhuChatbot.py:484] [42m
+川虎的温馨提示：访问 http://localhost:7860 查看界面[0m
+2023-07-11 14:40:45,972 [INFO] [models.py:559] 正在加载OpenAI模型: gpt-3.5-turbo
+2023-07-11 14:40:45,972 [INFO] [models.py:612] 模型设置为了： gpt-3.5-turbo
+2023-07-11 14:40:46,021 [INFO] [models.py:559] 正在加载OpenAI模型: gpt-3.5-turbo
+2023-07-11 14:40:46,021 [INFO] [models.py:612] 模型设置为了： gpt-3.5-turbo
+2023-07-11 14:40:50,230 [INFO] [base_model.py:378] 用户的输入为：[34mcolumn reference "id" is ambiguous
+[0m
+2023-07-11 14:41:02,145 [INFO] [base_model.py:442] 回答为：[34mThe error message "column reference 'id' is ambiguous" typically occurs when there are multiple tables involved in a query and both of them have a column named 'id'. This ambiguity may lead to confusion for the database engine while determining which 'id' column should be used.
+
+To resolve this issue, you can specify the table name or alias along with the 'id' column in your SQL query. For example, if you have two tables '[0m
+2023-07-11 14:41:06,707 [INFO] [base_model.py:378] 用户的输入为：[34m用中文回答[0m
+2023-07-11 14:41:45,535 [INFO] [base_model.py:442] 回答为：[34m"column reference 'id' is ambiguous" 错误通常发生在查询涉及了多个表格且这些表格都有一个名为'id'的列的情况下。这种模糊性可能会导致数据库引擎在确定应使用哪个'id'列时产生困惑。
+
+要解决这个问题，您可以在SQL查询中指定表格名字或别名与'id'列一起使用。例如，如果您有两个表格 'table1' 和 'table2'，并且这两个表都有一个'id'列，您可以使用类似下面的语法来指定表格：
+
+SELECT table1.id, table2.id
+FROM table1, table2
+WHERE table1.some_column = table2.some_column;
+
+或者，您也可以为表格提供别名，然后在查询中使用别名来引用'id'列，如下所示：
+
+SELECT t1.id, t2.id
+FROM table1 t1, table2 t2
+WHERE t1.some_column = t2.some_column;
+
+通过这种方式，您可以明确告诉数据库引擎您想要使用哪个表格中的'id'列，从而解决模糊性问题。[0m
+2023-07-11 14:41:52,368 [INFO] [base_model.py:378] 用户的输入为：[34mcolumn reference "id" is ambiguous
+[0m
+2023-07-11 14:42:32,095 [INFO] [base_model.py:442] 回答为：[34m"列引用'id'是模糊的"这个错误通常发生在查询中涉及到多个表格，而这些表格都有一个名为'id'的列。当数据库引擎在确定使用哪个'id'列时产生歧义时，就会出现这个错误。
+
+要解决这个问题，您可以在查询中明确指定要使用的表格中的'id'列。可以通过在'id'列之前使用表格名称或别名来做到这一点。
+
+例如，如果您有两个表格分别是'table1'和'table2'，并且这两个表格都有一个'id'列，您可以这样明确指定表格：
+
+SELECT table1.id, table2.id
+FROM table1, table2
+WHERE table1.some_column = table2.some_column;
+
+或者，您也可以给表格设置一个别名，并在查询中使用别名来引用'id'列，示例如下：
+
+SELECT t1.id, t2.id
+FROM table1 t1, table2 t2
+WHERE t1.some_column = t2.some_column;
+
+通过这种方式，您可以明确告诉数据库引擎您想要使用哪个表格中的'id'列，以解决模糊性问题。[0m
+2023-07-11 14:48:20,421 [INFO] [base_model.py:378] 用户的输入为：[34m打开mysql视图 1449 - The user specified as a definer ('admin'@'%') does not exist[0m
+2023-07-11 14:49:24,378 [INFO] [base_model.py:442] 回答为：[34m视图是MySQL中的一种数据库对象，它是由某个用户定义和创建的。在打开视图时，如果指定的视图拥有者用户不存在，就会出现错误消息"1449 - The user specified as a definer ('admin'@'%') does not exist"。
+
+要解决这个问题，您需要采取以下步骤：
+
+1. 确保用户存在：首先，确保指定的视图拥有者用户（在错误消息中的 'admin'@'%'）确实存在于您的MySQL用户列表中。您可以使用以下命令来检查用户列表：
+   ```
+   SELECT user, host FROM mysql.user;
+   ```
+
+2. 重新创建用户：如果指定的用户不存在，您可以尝试重新创建该用户。使用以下命令将用户添加到MySQL中：
+   ```
+   CREATE USER 'admin'@'%' IDENTIFIED BY 'password';  -- 将 'admin' 替换为实际的用户名，将 'password' 替换为实际的密码
+   ```
+
+3. 授予权限：一旦用户存在，您需要为用户授予相应的权限，以便他能够操作和打开视图。例如，您可以使用以下命令授予用户所有数据库的所有权限：
+   ```
+   GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%';  -- 将 'admin' 替换为实际的用户名
+   ```
+
+完成上述步骤后，再次尝试打开视图，应该不再出现"1449 - The user specified as a definer ('admin'@'%') does not exist"的错误消息。注意，这些步骤需要具有适当的权限才能进行。如果您没有足够的权限，请联系系统管理员或具有管理员权限的用户来执行这些步骤。[0m
+2023-07-11 16:45:16,646 [INFO] [base_model.py:378] 用户的输入为：[34m拼接的sql from关键字消失了[0m
+2023-07-11 16:46:40,629 [INFO] [base_model.py:442] 回答为：[34m如果在拼接SQL语句中发现FROM关键字消失，这可能是由于拼接的字符串出现了错误导致的。下面是几种常见的导致FROM关键字消失的情况和解决方法：
+
+1. 拼接字符串时错误的引号用法：如果在拼接SQL字符串时使用了不正确的引号，可能会导致语法错误，进而使FROM关键字消失。确保字符串的引号使用正确，并在拼接字符串时进行正确的转义处理。
+
+示例：
+```python
+# 错误的例子，双引号未正确关闭
+sql = "SELECT * "
+sql += "FROM table_name
+```
+
+```python
+# 正确的例子，使用正确的引号和转义符
+sql = "SELECT * "
+sql += "FROM table_name"
+```
+
+2. 拼接的字符串中存在语法错误：检查您拼接的字符串中是否有其他语法错误，例如漏掉了逗号或其他关键字，这可能导致FROM关键字无效。
+
+示例：
+```python
+# 错误的例子，漏掉了逗号
+sql = "SELECT column1 "
+sql += "column2 "
+sql += "FROM table_name"
+```
+
+```python
+# 正确的例子，添加逗号分隔
+sql = "SELECT column1, "
+sql += "column2 "
+sql += "FROM table_name"
+```
+
+3. 字符串连接问题：确保在拼接字符串时使用适当的连接操作符，如"+"号或StringBuilder类（如果是Java或C#等语言）。
+
+示例：
+```python
+# 错误的例子，未使用连接操作符
+sql = "SELECT column1 "
+sql += "column2 "
+sql += "FROM table_name"
+```
+
+```python
+# 正确的例子，使用连接操作符连接字符串
+sql = "SELECT column1 "
+sql += "column2 "
+sql += "FROM table_name"
+```
+
+检查并修正上述问题后，FROM关键字应该会正确地出现在SQL语句中。请注意，这些示例是基于一些常见的拼接SQL字符串的语言，具体语法可能因使用的编程语言而有所不同。[0m
+2023-07-11 17:21:02,238 [INFO] [models.py:559] 正在加载OpenAI模型: gpt-3.5-turbo
+2023-07-11 17:21:02,240 [INFO] [models.py:612] 模型设置为了： gpt-3.5-turbo
+2023-07-11 17:21:02,280 [INFO] [models.py:559] 正在加载OpenAI模型: gpt-3.5-turbo
+2023-07-11 17:21:02,280 [INFO] [models.py:612] 模型设置为了： gpt-3.5-turbo
+2023-07-11 17:21:05,543 [INFO] [base_model.py:378] 用户的输入为：[34m123[0m
+2023-07-11 17:21:13,170 [INFO] [base_model.py:442] 回答为：[34mI'm sorry, but "123" does not provide enough context for me to understand what you are looking for or how I can assist you. Could you please provide more information or clarify your request?[0m
+2023-07-12 11:59:31,567 [INFO] [models.py:559] 正在加载OpenAI模型: gpt-3.5-turbo
+2023-07-12 11:59:31,573 [INFO] [models.py:612] 模型设置为了： gpt-3.5-turbo
+2023-07-12 11:59:32,925 [INFO] [utils.py:473] 您的IP区域：Japan。
+2023-07-12 11:59:33,099 [INFO] [ChuanhuChatbot.py:484] [42m
+川虎的温馨提示：访问 http://localhost:7860 查看界面[0m
+2023-07-12 11:59:34,257 [INFO] [models.py:559] 正在加载OpenAI模型: gpt-3.5-turbo
+2023-07-12 11:59:34,257 [INFO] [models.py:612] 模型设置为了： gpt-3.5-turbo
+2023-07-12 11:59:34,319 [INFO] [models.py:559] 正在加载OpenAI模型: gpt-3.5-turbo
+2023-07-12 11:59:34,320 [INFO] [models.py:612] 模型设置为了： gpt-3.5-turbo
+2023-07-12 12:00:35,758 [INFO] [index_func.py:38] loading file: 附件2业务分析说明书模板 20220504.docx
+2023-07-12 12:00:37,329 [ERROR] [index_func.py:83] Error loading file: 附件2业务分析说明书模板 20220504.docx
+Traceback (most recent call last):
+  File "/Users/wangjiahao/work/github/LLMs/V0.0.5/ChuanhuChatGPT/modules/index_func.py", line 59, in get_documents
+    texts = loader.load()
+            ^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/langchain/document_loaders/unstructured.py", line 70, in load
+    elements = self._get_elements()
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/langchain/document_loaders/word_document.py", line 100, in _get_elements
+    from unstructured.partition.docx import partition_docx
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/unstructured/partition/docx.py", line 33, in <module>
+    from unstructured.partition.text_type import (
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/unstructured/partition/text_type.py", line 21, in <module>
+    from unstructured.nlp.tokenize import pos_tag, sent_tokenize, word_tokenize
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/unstructured/nlp/tokenize.py", line 32, in <module>
+    _download_nltk_package_if_not_present(package_name, package_category)
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/unstructured/nlp/tokenize.py", line 21, in _download_nltk_package_if_not_present
+    nltk.find(f"{package_category}/{package_name}")
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/nltk/data.py", line 555, in find
+    return find(modified_name, paths)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/nltk/data.py", line 542, in find
+    return ZipFilePathPointer(p, zipentry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/nltk/compat.py", line 41, in _decorator
+    return init_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/nltk/data.py", line 394, in __init__
+    zipfile = OpenOnDemandZipFile(os.path.abspath(zipfile))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/nltk/compat.py", line 41, in _decorator
+    return init_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/nltk/data.py", line 935, in __init__
+    zipfile.ZipFile.__init__(self, filename)
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/zipfile.py", line 1302, in __init__
+    self._RealGetContents()
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/zipfile.py", line 1369, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2023-07-12 12:00:37,335 [ERROR] [index_func.py:139] 索引构建失败！cannot access local variable 'texts' where it is not associated with a value
+Traceback (most recent call last):
+  File "/Users/wangjiahao/work/github/LLMs/V0.0.5/ChuanhuChatGPT/modules/index_func.py", line 127, in construct_index
+    documents = get_documents(file_src)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/work/github/LLMs/V0.0.5/ChuanhuChatGPT/modules/index_func.py", line 86, in get_documents
+    texts = text_splitter.split_documents(texts)
+                                          ^^^^^
+UnboundLocalError: cannot access local variable 'texts' where it is not associated with a value
+2023-07-12 12:00:48,308 [INFO] [index_func.py:38] loading file: 附件2业务分析说明书模板 20220504.docx
+2023-07-12 12:00:48,313 [ERROR] [index_func.py:83] Error loading file: 附件2业务分析说明书模板 20220504.docx
+Traceback (most recent call last):
+  File "/Users/wangjiahao/work/github/LLMs/V0.0.5/ChuanhuChatGPT/modules/index_func.py", line 59, in get_documents
+    texts = loader.load()
+            ^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/langchain/document_loaders/unstructured.py", line 70, in load
+    elements = self._get_elements()
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/langchain/document_loaders/word_document.py", line 100, in _get_elements
+    from unstructured.partition.docx import partition_docx
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/unstructured/partition/docx.py", line 33, in <module>
+    from unstructured.partition.text_type import (
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/unstructured/partition/text_type.py", line 21, in <module>
+    from unstructured.nlp.tokenize import pos_tag, sent_tokenize, word_tokenize
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/unstructured/nlp/tokenize.py", line 32, in <module>
+    _download_nltk_package_if_not_present(package_name, package_category)
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/unstructured/nlp/tokenize.py", line 21, in _download_nltk_package_if_not_present
+    nltk.find(f"{package_category}/{package_name}")
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/nltk/data.py", line 555, in find
+    return find(modified_name, paths)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/nltk/data.py", line 542, in find
+    return ZipFilePathPointer(p, zipentry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/nltk/compat.py", line 41, in _decorator
+    return init_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/nltk/data.py", line 394, in __init__
+    zipfile = OpenOnDemandZipFile(os.path.abspath(zipfile))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/nltk/compat.py", line 41, in _decorator
+    return init_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/nltk/data.py", line 935, in __init__
+    zipfile.ZipFile.__init__(self, filename)
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/zipfile.py", line 1302, in __init__
+    self._RealGetContents()
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/zipfile.py", line 1369, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2023-07-12 12:00:48,317 [ERROR] [index_func.py:139] 索引构建失败！cannot access local variable 'texts' where it is not associated with a value
+Traceback (most recent call last):
+  File "/Users/wangjiahao/work/github/LLMs/V0.0.5/ChuanhuChatGPT/modules/index_func.py", line 127, in construct_index
+    documents = get_documents(file_src)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/work/github/LLMs/V0.0.5/ChuanhuChatGPT/modules/index_func.py", line 86, in get_documents
+    texts = text_splitter.split_documents(texts)
+                                          ^^^^^
+UnboundLocalError: cannot access local variable 'texts' where it is not associated with a value
+2023-07-12 12:00:48,318 [INFO] [base_model.py:295] 生成内容总结中……
+Traceback (most recent call last):
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/gradio/routes.py", line 439, in run_predict
+    output = await app.get_blocks().process_api(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/gradio/blocks.py", line 1384, in process_api
+    result = await self.call_function(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/gradio/blocks.py", line 1089, in call_function
+    prediction = await anyio.to_thread.run_sync(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/anyio/to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/gradio/utils.py", line 700, in wrapper
+    response = f(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/work/github/LLMs/V0.0.5/ChuanhuChatGPT/modules/utils.py", line 123, in handle_summarize_index
+    return current_model.summarize_index(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/work/github/LLMs/V0.0.5/ChuanhuChatGPT/modules/models/base_model.py", line 305, in summarize_index
+    summary = chain({"input_documents": list(index.docstore.__dict__["_dict"].values())}, return_only_outputs=True)["output_text"]
+                                             ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'docstore'
+2023-07-12 13:50:02,029 [INFO] [index_func.py:123] 找到了缓存的索引文件，加载中……
+2023-07-12 13:50:02,039 [INFO] [loader.py:64] Loading faiss.
+2023-07-12 13:50:02,155 [INFO] [loader.py:66] Successfully loaded faiss.
+2023-07-12 13:50:19,444 [INFO] [index_func.py:123] 找到了缓存的索引文件，加载中……
+2023-07-12 13:50:19,447 [INFO] [base_model.py:295] 生成内容总结中……
+2023-07-12 14:02:54,524 [WARNING] [connectionpool.py:823] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response'))': /v1/chat/completions
+2023-07-12 14:04:26,211 [WARNING] [connectionpool.py:823] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response'))': /v1/chat/completions
+2023-07-12 14:10:25,442 [INFO] [util.py:67] error_code=rate_limit_exceeded error_message='Rate limit reached for default-gpt-3.5-turbo in organization org-6RgVUqgosH7nn13tyF7od9ox on requests per min. Limit: 3 / min. Please try again in 20s. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+2023-07-12 14:10:25,446 [WARNING] [before_sleep.py:65] Retrying langchain.chat_models.openai.ChatOpenAI.completion_with_retry.<locals>._completion_with_retry in 1.0 seconds as it raised RateLimitError: Rate limit reached for default-gpt-3.5-turbo in organization org-6RgVUqgosH7nn13tyF7od9ox on requests per min. Limit: 3 / min. Please try again in 20s. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method..
+2023-07-12 14:10:26,917 [INFO] [util.py:67] error_code=rate_limit_exceeded error_message='Rate limit reached for default-gpt-3.5-turbo in organization org-6RgVUqgosH7nn13tyF7od9ox on requests per min. Limit: 3 / min. Please try again in 20s. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+2023-07-12 14:10:26,918 [WARNING] [before_sleep.py:65] Retrying langchain.chat_models.openai.ChatOpenAI.completion_with_retry.<locals>._completion_with_retry in 2.0 seconds as it raised RateLimitError: Rate limit reached for default-gpt-3.5-turbo in organization org-6RgVUqgosH7nn13tyF7od9ox on requests per min. Limit: 3 / min. Please try again in 20s. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method..
+2023-07-12 14:10:29,696 [INFO] [util.py:67] error_code=rate_limit_exceeded error_message='Rate limit reached for default-gpt-3.5-turbo in organization org-6RgVUqgosH7nn13tyF7od9ox on requests per min. Limit: 3 / min. Please try again in 20s. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+2023-07-12 14:10:29,697 [WARNING] [before_sleep.py:65] Retrying langchain.chat_models.openai.ChatOpenAI.completion_with_retry.<locals>._completion_with_retry in 4.0 seconds as it raised RateLimitError: Rate limit reached for default-gpt-3.5-turbo in organization org-6RgVUqgosH7nn13tyF7od9ox on requests per min. Limit: 3 / min. Please try again in 20s. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method..
+2023-07-12 14:11:22,544 [INFO] [util.py:67] error_code=rate_limit_exceeded error_message='Rate limit reached for default-gpt-3.5-turbo in organization org-6RgVUqgosH7nn13tyF7od9ox on requests per min. Limit: 3 / min. Please try again in 20s. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+2023-07-12 14:11:22,546 [WARNING] [before_sleep.py:65] Retrying langchain.chat_models.openai.ChatOpenAI.completion_with_retry.<locals>._completion_with_retry in 1.0 seconds as it raised RateLimitError: Rate limit reached for default-gpt-3.5-turbo in organization org-6RgVUqgosH7nn13tyF7od9ox on requests per min. Limit: 3 / min. Please try again in 20s. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method..
+2023-07-12 14:11:23,967 [INFO] [util.py:67] error_code=rate_limit_exceeded error_message='Rate limit reached for default-gpt-3.5-turbo in organization org-6RgVUqgosH7nn13tyF7od9ox on requests per min. Limit: 3 / min. Please try again in 20s. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+2023-07-12 14:11:23,968 [WARNING] [before_sleep.py:65] Retrying langchain.chat_models.openai.ChatOpenAI.completion_with_retry.<locals>._completion_with_retry in 2.0 seconds as it raised RateLimitError: Rate limit reached for default-gpt-3.5-turbo in organization org-6RgVUqgosH7nn13tyF7od9ox on requests per min. Limit: 3 / min. Please try again in 20s. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method..
+2023-07-12 14:11:26,455 [INFO] [util.py:67] error_code=rate_limit_exceeded error_message='Rate limit reached for default-gpt-3.5-turbo in organization org-6RgVUqgosH7nn13tyF7od9ox on requests per min. Limit: 3 / min. Please try again in 20s. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+2023-07-12 14:11:26,456 [WARNING] [before_sleep.py:65] Retrying langchain.chat_models.openai.ChatOpenAI.completion_with_retry.<locals>._completion_with_retry in 4.0 seconds as it raised RateLimitError: Rate limit reached for default-gpt-3.5-turbo in organization org-6RgVUqgosH7nn13tyF7od9ox on requests per min. Limit: 3 / min. Please try again in 20s. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method..
+2023-07-12 14:11:31,849 [INFO] [util.py:67] error_code=rate_limit_exceeded error_message='Rate limit reached for default-gpt-3.5-turbo in organization org-6RgVUqgosH7nn13tyF7od9ox on requests per min. Limit: 3 / min. Please try again in 20s. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+2023-07-12 14:11:31,851 [WARNING] [before_sleep.py:65] Retrying langchain.chat_models.openai.ChatOpenAI.completion_with_retry.<locals>._completion_with_retry in 8.0 seconds as it raised RateLimitError: Rate limit reached for default-gpt-3.5-turbo in organization org-6RgVUqgosH7nn13tyF7od9ox on requests per min. Limit: 3 / min. Please try again in 20s. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method..
+2023-07-12 14:11:53,048 [INFO] [util.py:67] error_code=rate_limit_exceeded error_message='Rate limit reached for default-gpt-3.5-turbo in organization org-6RgVUqgosH7nn13tyF7od9ox on requests per min. Limit: 3 / min. Please try again in 20s. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+2023-07-12 14:11:53,049 [WARNING] [before_sleep.py:65] Retrying langchain.chat_models.openai.ChatOpenAI.completion_with_retry.<locals>._completion_with_retry in 1.0 seconds as it raised RateLimitError: Rate limit reached for default-gpt-3.5-turbo in organization org-6RgVUqgosH7nn13tyF7od9ox on requests per min. Limit: 3 / min. Please try again in 20s. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method..
+2023-07-12 14:14:51,121 [WARNING] [before_sleep.py:65] Retrying langchain.chat_models.openai.ChatOpenAI.completion_with_retry.<locals>._completion_with_retry in 1.0 seconds as it raised ServiceUnavailableError: The server is overloaded or not ready yet..
+2023-07-12 14:14:52,554 [INFO] [util.py:67] error_code=rate_limit_exceeded error_message='Rate limit reached for default-gpt-3.5-turbo in organization org-6RgVUqgosH7nn13tyF7od9ox on requests per min. Limit: 3 / min. Please try again in 20s. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+2023-07-12 14:14:52,556 [WARNING] [before_sleep.py:65] Retrying langchain.chat_models.openai.ChatOpenAI.completion_with_retry.<locals>._completion_with_retry in 2.0 seconds as it raised RateLimitError: Rate limit reached for default-gpt-3.5-turbo in organization org-6RgVUqgosH7nn13tyF7od9ox on requests per min. Limit: 3 / min. Please try again in 20s. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method..
+2023-07-12 14:15:31,570 [INFO] [util.py:67] error_code=rate_limit_exceeded error_message='Rate limit reached for default-gpt-3.5-turbo in organization org-6RgVUqgosH7nn13tyF7od9ox on requests per min. Limit: 3 / min. Please try again in 20s. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+2023-07-12 14:15:31,572 [WARNING] [before_sleep.py:65] Retrying langchain.chat_models.openai.ChatOpenAI.completion_with_retry.<locals>._completion_with_retry in 1.0 seconds as it raised RateLimitError: Rate limit reached for default-gpt-3.5-turbo in organization org-6RgVUqgosH7nn13tyF7od9ox on requests per min. Limit: 3 / min. Please try again in 20s. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method..
+2023-07-12 14:15:33,004 [INFO] [util.py:67] error_code=rate_limit_exceeded error_message='Rate limit reached for default-gpt-3.5-turbo in organization org-6RgVUqgosH7nn13tyF7od9ox on requests per min. Limit: 3 / min. Please try again in 20s. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+2023-07-12 14:15:33,005 [WARNING] [before_sleep.py:65] Retrying langchain.chat_models.openai.ChatOpenAI.completion_with_retry.<locals>._completion_with_retry in 2.0 seconds as it raised RateLimitError: Rate limit reached for default-gpt-3.5-turbo in organization org-6RgVUqgosH7nn13tyF7od9ox on requests per min. Limit: 3 / min. Please try again in 20s. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method..
+2023-07-12 14:16:14,585 [WARNING] [before_sleep.py:65] Retrying langchain.chat_models.openai.ChatOpenAI.completion_with_retry.<locals>._completion_with_retry in 1.0 seconds as it raised ServiceUnavailableError: The server is overloaded or not ready yet..
+2023-07-12 17:07:47,981 [INFO] [base_model.py:378] 用户的输入为：[34m什么叫数字时代[0m
+2023-07-12 17:08:28,881 [INFO] [base_model.py:442] 回答为：[34m数字时代是指信息和通信技术迅速发展的时代，也被称为信息时代、网络时代、电子时代等。在数字时代，人们使用数字技术和互联网来获取和传递信息、进行交流和交易。数字技术的快速发展已经改变了人们的生活方式、工作方式、社交方式等方方面面。在数字时代，人们可以通过互联网获取丰富多样的信息，与远在天边的人进行实时的沟通，使用各种数字工具和应用程序提高工作效率，进行网上购物、在线支付等。数字时代也带来了许多新的机遇和挑战，例如网络隐私和安全问题、信息超载等。总体而言，数字时代是一个信息交流快速、数字化程度高、全球互联的时代。[0m
+2023-07-12 17:37:37,520 [INFO] [index_func.py:38] loading file: 温氏投资管理系统建设情况汇报05084.pptx
+2023-07-12 17:37:38,221 [ERROR] [index_func.py:83] Error loading file: 温氏投资管理系统建设情况汇报05084.pptx
+Traceback (most recent call last):
+  File "/Users/wangjiahao/work/github/LLMs/V0.0.5/ChuanhuChatGPT/modules/index_func.py", line 64, in get_documents
+    texts = loader.load()
+            ^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/langchain/document_loaders/unstructured.py", line 70, in load
+    elements = self._get_elements()
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/langchain/document_loaders/powerpoint.py", line 41, in _get_elements
+    from unstructured.partition.pptx import partition_pptx
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/unstructured/partition/pptx.py", line 23, in <module>
+    from unstructured.partition.text_type import (
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/unstructured/partition/text_type.py", line 21, in <module>
+    from unstructured.nlp.tokenize import pos_tag, sent_tokenize, word_tokenize
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/unstructured/nlp/tokenize.py", line 32, in <module>
+    _download_nltk_package_if_not_present(package_name, package_category)
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/unstructured/nlp/tokenize.py", line 21, in _download_nltk_package_if_not_present
+    nltk.find(f"{package_category}/{package_name}")
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/nltk/data.py", line 555, in find
+    return find(modified_name, paths)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/nltk/data.py", line 542, in find
+    return ZipFilePathPointer(p, zipentry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/nltk/compat.py", line 41, in _decorator
+    return init_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/nltk/data.py", line 394, in __init__
+    zipfile = OpenOnDemandZipFile(os.path.abspath(zipfile))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/nltk/compat.py", line 41, in _decorator
+    return init_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/nltk/data.py", line 935, in __init__
+    zipfile.ZipFile.__init__(self, filename)
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/zipfile.py", line 1302, in __init__
+    self._RealGetContents()
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/zipfile.py", line 1369, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2023-07-12 17:37:38,228 [ERROR] [index_func.py:139] 索引构建失败！cannot access local variable 'texts' where it is not associated with a value
+Traceback (most recent call last):
+  File "/Users/wangjiahao/work/github/LLMs/V0.0.5/ChuanhuChatGPT/modules/index_func.py", line 127, in construct_index
+    documents = get_documents(file_src)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/work/github/LLMs/V0.0.5/ChuanhuChatGPT/modules/index_func.py", line 86, in get_documents
+    texts = text_splitter.split_documents(texts)
+                                          ^^^^^
+UnboundLocalError: cannot access local variable 'texts' where it is not associated with a value
+2023-07-12 17:37:48,505 [INFO] [index_func.py:38] loading file: 温氏投资管理系统建设情况汇报05084.pptx
+2023-07-12 17:37:48,511 [ERROR] [index_func.py:83] Error loading file: 温氏投资管理系统建设情况汇报05084.pptx
+Traceback (most recent call last):
+  File "/Users/wangjiahao/work/github/LLMs/V0.0.5/ChuanhuChatGPT/modules/index_func.py", line 64, in get_documents
+    texts = loader.load()
+            ^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/langchain/document_loaders/unstructured.py", line 70, in load
+    elements = self._get_elements()
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/langchain/document_loaders/powerpoint.py", line 41, in _get_elements
+    from unstructured.partition.pptx import partition_pptx
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/unstructured/partition/pptx.py", line 23, in <module>
+    from unstructured.partition.text_type import (
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/unstructured/partition/text_type.py", line 21, in <module>
+    from unstructured.nlp.tokenize import pos_tag, sent_tokenize, word_tokenize
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/unstructured/nlp/tokenize.py", line 32, in <module>
+    _download_nltk_package_if_not_present(package_name, package_category)
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/unstructured/nlp/tokenize.py", line 21, in _download_nltk_package_if_not_present
+    nltk.find(f"{package_category}/{package_name}")
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/nltk/data.py", line 555, in find
+    return find(modified_name, paths)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/nltk/data.py", line 542, in find
+    return ZipFilePathPointer(p, zipentry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/nltk/compat.py", line 41, in _decorator
+    return init_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/nltk/data.py", line 394, in __init__
+    zipfile = OpenOnDemandZipFile(os.path.abspath(zipfile))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/nltk/compat.py", line 41, in _decorator
+    return init_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/nltk/data.py", line 935, in __init__
+    zipfile.ZipFile.__init__(self, filename)
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/zipfile.py", line 1302, in __init__
+    self._RealGetContents()
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/zipfile.py", line 1369, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2023-07-12 17:37:48,513 [ERROR] [index_func.py:139] 索引构建失败！cannot access local variable 'texts' where it is not associated with a value
+Traceback (most recent call last):
+  File "/Users/wangjiahao/work/github/LLMs/V0.0.5/ChuanhuChatGPT/modules/index_func.py", line 127, in construct_index
+    documents = get_documents(file_src)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/work/github/LLMs/V0.0.5/ChuanhuChatGPT/modules/index_func.py", line 86, in get_documents
+    texts = text_splitter.split_documents(texts)
+                                          ^^^^^
+UnboundLocalError: cannot access local variable 'texts' where it is not associated with a value
+2023-07-12 17:37:48,514 [INFO] [base_model.py:295] 生成内容总结中……
+Traceback (most recent call last):
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/gradio/routes.py", line 439, in run_predict
+    output = await app.get_blocks().process_api(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/gradio/blocks.py", line 1384, in process_api
+    result = await self.call_function(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/gradio/blocks.py", line 1089, in call_function
+    prediction = await anyio.to_thread.run_sync(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/anyio/to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/gradio/utils.py", line 700, in wrapper
+    response = f(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/work/github/LLMs/V0.0.5/ChuanhuChatGPT/modules/utils.py", line 123, in handle_summarize_index
+    return current_model.summarize_index(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/work/github/LLMs/V0.0.5/ChuanhuChatGPT/modules/models/base_model.py", line 305, in summarize_index
+    summary = chain({"input_documents": list(index.docstore.__dict__["_dict"].values())}, return_only_outputs=True)["output_text"]
+                                             ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'docstore'
+2023-07-12 17:38:16,475 [INFO] [index_func.py:38] loading file: 温氏投资管理系统建设情况汇报05084.pptx
+2023-07-12 17:38:16,482 [ERROR] [index_func.py:83] Error loading file: 温氏投资管理系统建设情况汇报05084.pptx
+Traceback (most recent call last):
+  File "/Users/wangjiahao/work/github/LLMs/V0.0.5/ChuanhuChatGPT/modules/index_func.py", line 64, in get_documents
+    texts = loader.load()
+            ^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/langchain/document_loaders/unstructured.py", line 70, in load
+    elements = self._get_elements()
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/langchain/document_loaders/powerpoint.py", line 41, in _get_elements
+    from unstructured.partition.pptx import partition_pptx
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/unstructured/partition/pptx.py", line 23, in <module>
+    from unstructured.partition.text_type import (
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/unstructured/partition/text_type.py", line 21, in <module>
+    from unstructured.nlp.tokenize import pos_tag, sent_tokenize, word_tokenize
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/unstructured/nlp/tokenize.py", line 32, in <module>
+    _download_nltk_package_if_not_present(package_name, package_category)
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/unstructured/nlp/tokenize.py", line 21, in _download_nltk_package_if_not_present
+    nltk.find(f"{package_category}/{package_name}")
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/nltk/data.py", line 555, in find
+    return find(modified_name, paths)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/nltk/data.py", line 542, in find
+    return ZipFilePathPointer(p, zipentry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/nltk/compat.py", line 41, in _decorator
+    return init_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/nltk/data.py", line 394, in __init__
+    zipfile = OpenOnDemandZipFile(os.path.abspath(zipfile))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/nltk/compat.py", line 41, in _decorator
+    return init_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/site-packages/nltk/data.py", line 935, in __init__
+    zipfile.ZipFile.__init__(self, filename)
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/zipfile.py", line 1302, in __init__
+    self._RealGetContents()
+  File "/Users/wangjiahao/miniconda3/envs/chuanhu_env/lib/python3.11/zipfile.py", line 1369, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2023-07-12 17:38:16,484 [ERROR] [index_func.py:139] 索引构建失败！cannot access local variable 'texts' where it is not associated with a value
+Traceback (most recent call last):
+  File "/Users/wangjiahao/work/github/LLMs/V0.0.5/ChuanhuChatGPT/modules/index_func.py", line 127, in construct_index
+    documents = get_documents(file_src)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wangjiahao/work/github/LLMs/V0.0.5/ChuanhuChatGPT/modules/index_func.py", line 86, in get_documents
+    texts = text_splitter.split_documents(texts)
+                                          ^^^^^
+UnboundLocalError: cannot access local variable 'texts' where it is not associated with a value
+2023-07-12 23:29:46,551 [INFO] [base_model.py:378] 用户的输入为：[34m1[0m
+2023-07-12 23:30:15,023 [INFO] [base_model.py:442] 回答为：[34m抱歉，我之前的回答并不是很详细。数字时代指的是在科技和数字技术发展的背景下，人们生活的方方面面都受到数字化的影响。这包括在通信、娱乐、交易、教育、医疗等领域中使用数字技术进行操作和处理。数字时代带来了大量的数字化信息和数据，改变了人们的生活方式，例如通过智能手机和社交媒体进行社交互动、在线购物、数字支付和网上银行业务、在线学习和远程办公等。数字时代也加速了科技创新的速度，推动了人工智能、物联网、虚拟现实等领域的发展。这个时代对于个人、企业、政府和社会都带来了许多机遇和挑战，需要适应和应对不断变化的新技术和新趋势。[0m
+2023-07-13 15:08:41,171 [INFO] [base_model.py:378] 用户的输入为：[34morg.apache.poi.poifs.filesystem.NotOLE2FileException: Invalid header signature; read 0xCFBA2B6A6A414E6C, expected 0xE11AB1A1E011CFD0 - Your file appears not to be a valid OLE2 document[0m
+2023-07-13 15:09:05,684 [INFO] [base_model.py:442] 回答为：[34m这个错误信息是在使用Apache POI库时出现的，意味着你正在尝试读取一个无效的OLE2文件。OLE2是一种文件格式，常用于Microsoft Office的早期版本中。根据错误消息，你的文件的文件头签名不是预期的0xE11AB1A1E011CFD0，而是0xCFBA2B6A6A414E6C，因此Apache POI无法正确解析该文件。
+
+要解决这个问题，你可以尝试以下几个方法：
+
+1. 确认file对象指向的文件是一个有效的OLE2文件，确保它具有正确的文件扩展名和文件格式。你可以尝试手动打开该文件来验证它是否能够在相应的应用程序中正确打开。
+
+2. 检查你的代码，确保你正在使用正确的Apache POI库版本，并且使用正确的方法来读取和处理OLE2文件。
+
+3. 如果你的文件不是有效的OLE2文件，你可能需要转换文件格式或使用其他适当的库来处理它。
+
+注意：如果你正在尝试读取的是一个不是OLE2格式的文件，你需要找到正确的库来处理该文件。Apache POI专门用于处理Microsoft Office格式的文件，如.doc、.xls和.ppt等文件。如果你要读取其他格式的文件（如.docx、.xlsx、.pptx），则需要使用不同的库，如Apache POI的XSSF、SXSSF和HSSF插件。[0m
+2023-07-13 15:09:28,115 [INFO] [base_model.py:378] 用户的输入为：[34mjava.lang.IllegalArgumentException: The document is really a PDF file[0m
+2023-07-13 15:09:47,034 [INFO] [base_model.py:442] 回答为：[34m该错误信息表明你正在尝试将一个文件当作PDF文件进行处理，但实际上该文件并不是有效的PDF文件。
+
+要解决这个问题，你可以检查以下几点：
+
+1. 确保你正在处理的文件确实是一个有效的PDF文件。你可以尝试使用PDF阅读器打开该文件，看是否能够正确显示内容。
+
+2. 检查你的代码，确认你正在使用正确的方法和库来读取和处理PDF文件。常用的Java库包括iText、Apache PDFBox等，你需要确保你使用的是适用于PDF文件的正确库和版本。
+
+3. 如果你确定文件是一个有效的PDF文件，但仍然出现该错误，可能是文件本身存在一些问题。你可以尝试使用其他PDF工具重新保存该文件，或者使用PDF修复工具将其修复。之后尝试重新处理该文件。
+
+总之，要解决该错误，你需要确认文件是否是一个有效的PDF文件，并且确保你使用正确的库和方法来读取和处理它。如果问题仍然存在，可能需要进一步检查文件本身的完整性和修复方式。[0m
+2023-07-13 18:33:25,883 [INFO] [base_model.py:378] 用户的输入为：[34m写入com.anxin.init.entity.ProjectDebtImport时出错: /Users/wangjiahao/work/anxin/gzct/server/jbs-dist/target/classes/com/anxin/init/entity/ProjectDebtImport.class: Too many open files[0m
+2023-07-13 18:33:42,915 [INFO] [base_model.py:442] 回答为：[34m该错误提示是由于打开的文件数量超过系统限制而导致的。
+
+要解决这个问题，你可以尝试以下几个方法：
+
+1. 检查你的代码，确保在操作文件时，每次读写文件后都正确地关闭文件流。确保在处理完一个文件后，调用相应的close()方法关闭文件流，释放系统资源。
+
+2. 检查系统的文件描述符限制。文件描述符是操作系统用来表示一个打开文件的数字标识，每个进程都有一定数量的文件描述符限制。你可以通过查看操作系统的文档或使用命令`ulimit -n`来查看文件描述符限制。如果限制较低，你可以尝试增加文件描述符限制。
+
+3. 检查你的代码中是否存在文件流未正确关闭的BUG。可能是某个地方的代码没有正确地关闭文件流，导致文件句柄一直处于打开状态，进而超过了文件描述符限制。仔细检查代码逻辑，确保在适当的时候关闭文件流。
+
+4. 如果你的系统运行了一段时间后才出现该错误，可能是由于资源泄漏导致的。可以使用一些内存和资源检测工具来帮助你找到资源泄漏的位置，并及时释放相应资源。
+
+总结起来，要解决"Too many open files"错误，你需要确保在正确的位置关闭文件流、增加文件描述符限制并检查代码中是否存在资源泄漏等问题。[0m
+2023-07-17 14:47:20,074 [INFO] [base_model.py:378] 用户的输入为：[34mselect X.* ,
+to_char((X.gp-X.lastyearegp),'fm999999999990.00') as gpdiff
+from (select 
+      a.rowid row_noid,
+      a.item,
+      b.ACCT_GRP,
+      b.ACCT_DEPT,
+      b.item_name,
+      b.vendor_code,
+      c.vendor_name,
+      to_char(f.cost,'fm9999999999999990.000000') cost,
+      to_char(a.mm_cost,'fm9999999999999990.000000') mm_cost,
+      to_char((f.cost-a.mm_cost)/f.cost*100,'fm9990.00')||'%' de_cost,to_char(s.price,'fm999999999990.00') price,
+      to_char(a.mm_price,'fm999999999990.00') mm_price,
+      to_char((b.price-a.mm_price)/b.price*100,'fm999990.00')||'%' de_price,
+      substr(a.veff_date_from,1,4)||'-'||substr(a.veff_date_from,5,2)||'-'||substr(a.veff_date_from,7,2)||'~'||substr(a.veff_date_to,1,4)||'-'||substr(a.veff_date_to,5,2)||'-'||substr(a.veff_date_to,7,2) veff_date,
+			substr(a.mm_start_date,1,4)||'-'||substr(a.mm_start_date,5,2)||'-'||substr(a.mm_start_date,7,2)||'~'||substr(a.mm_end_date,1,4)||'-'||substr(a.mm_end_date,5,2)||'-'||substr(a.mm_end_date,7,2) mm_date,
+      decode(a.mod_price_reason,'1','促销','2','厂商成本调价','3','其它') reason,
+			to_char(nvl(e.dms,0),'fm99990') dms,
+			to_char(a.pre_dms,'fm99990') pre_dms,
+      to_char((b.price-f.cost*(1+d.taxrate))/b.price*100,'fm9990.00')||'%' gp1,
+			decode(b.price-a.mm_price,'0','#DIV/0!',to_char((f.cost-a.mm_cost)*(1+d.taxrate)/(b.price-a.mm_price)*100,'fm9990.00')||'%') tran_profit,
+      decode(a.mm_price,'0','#DIV/0!',to_char((a.mm_price-a.mm_cost*(1+d.taxrate))/a.mm_price*100,'fm9990.00')||'%') gp2,
+			decode(a.mod_price_reason,'2',to_char(to_date(a.veff_date_to,'yyyymmdd')- to_date(a.veff_date_from,'yyyymmdd')+1),decode(a.sales_days,'999','长期',a.sales_days)) sales_days,  
+      decode(a.mod_price_reason,'2',decode(a.mm_price,'0','#DIV/0!',decode(a.sales_days,'999','长期促销',to_char(a.mm_price*a.pre_dms*((a.mm_price-a.mm_cost*(1+d.taxrate))/a.mm_price)*(to_date(a.veff_date_to,'yyyymmdd')-to_date(a.veff_date_from,'yyyymmdd')+1)-b.price*to_char(nvl(e.dms,0),'fm99990')*((b.price-f.cost*(1+d.taxrate))/b.price)*(to_date(a.veff_date_to,'yyyymmdd')-to_date(a.veff_date_from,'yyyymmdd')+1),'fm9999999990'))),decode(a.mm_price,'0','#DIV/0!',decode(a.sales_days,'999','长期促销',to_char(a.mm_price*a.pre_dms*((a.mm_price-a.mm_cost*(1+d.taxrate))/a.mm_price)*a.sales_days-b.price*to_char(nvl(e.dms,0),'fm99990')*((b.price-f.cost*(1+d.taxrate))/b.price)*a.sales_days,'fm9999999990')))) gross_profit,
+      a.mm_method,
+      decode(a.dist_method,'1','厂商让利','2','事后补差') dist_method,
+      a.remark,
+      a.mod_price_reason reason2,
+      a.dist_method method2,
+      a.upd_user,a.upd_date,
+      a.upd_time,
+      a.sales_days sales_days2,
+      nvl(ry.GP,-999) GP,
+      nvl(ry.SALE_PER,-999)||'%' SALE_PER,
+      nvl(ry.SALEQTYTOT,-999) SALEQTYTOT,
+			COALESCE(lgp.GP, -999) AS lastyearegp,
+			gor.MMTOTQTY as MMTOTQTY,
+			qua.TOTALQUA
+  from mm_control a,sb005 b,sb003 c,taxtype d,ana17 e,
+  (select a.item,a.cost
+   from SB005ZONE_COST a,
+   (SELECT A.ITEM, max(A.EFF_DATE) EFF_DATE2
+   FROM SB005ZONE_COST A
+   WHERE A.STATUS LIKE '1'
+   group by a.item) b
+   where a.eff_date = b.EFF_DATE2 and a.item = b.item) f,
+ (SELECT a.* FROM (SELECT max(a.eff_date) as eff_date,a.item FROM sb005zone_price a where a.item like '%' and a.status = 1 group by a.item)a) g,
+ sb005zone_price s,
+ (SELECT A.*
+FROM (SELECT A.ITEM,
+               A.ITEM_NAME,
+               NVL(SALEQTYTOT,0) AS SALEQTYTOT,
+							 NVL(SALEAMTTOT,0) AS SALEAMTTOT,
+               DECODE(NVL(B.SALEAMTTOT,0),0,0,ROUND((NVL(B.SALEAMTTOT,0)-NVL(B.COSTAMTTOT,0))/NVL(B.SALEAMTTOT,0),4)*100) AS SALE_PER,
+							 (DECODE(NVL(B.SALEAMTTOT,0),0,0,ROUND((NVL(B.SALEAMTTOT,0)-NVL(B.COSTAMTTOT,0))/NVL(B.SALEAMTTOT,0),4)*100)/100)*NVL(SALEAMTTOT,0) GP
+          FROM (SELECT SB005.ITEM,SB005.ITEM_NAME,status,Price,ITEM_LEVEL,SB005.ACCT_GRP
+                  FROM SB005
+                  WHERE 
+                  SB005.ACCT_DEPT     LIKE '%'
+                  AND SB005.ACCT_CATEGORY LIKE '%'
+                  AND SB005.MARKOUTTYPE LIKE '%'
+                  
+               )A,
+              (SELECT ITEMNO,
+                      SUM(SALEQTYTOT) AS SALEQTYTOT,SUM(SALEAMTTOT) AS SALEAMTTOT,SUM(COSTAMTTOT) AS COSTAMTTOT,
+                      MAX(UNITPRICE) AS UNITPRICE,SUM(MKTQTYTOT) AS MKTQTYTOT,SUM(MKTAMTTOT) AS MKTAMTTOT,
+                      SUM(DLVQTYTOT) AS DLVQTYTOT,SUM(DLVAMTTOT) AS DLVAMTTOT,
+                      SUM(NVL(STORE_CNT,0)) SALE_STORE_NUM
+                 FROM ANA03
+                WHERE ZONENO  = '00'
+                  AND STORENO = '000000'   
+                  AND STORENO not in (select storeid from ia_n_storeid)
+                  AND BUSIDATE BETWEEN TO_DATE('20230712','YYYYMMDD') AND TO_DATE('20230725','YYYYMMDD')
+                  AND CATNO   LIKE '%'
+                GROUP BY ITEMNO)B
+          WHERE A.ITEM = B.ITEMNO
+          )A,
+		(SELECT ITEM_NO,max(BC_PER) BC_PER FROM SCQ20A_T2 group by ITEM_NO) B
+          where A.item = B.ITEM_NO(+)
+					ORDER BY SALEAMTTOT DESC) ry
+ ,
+ (SELECT A.*
+FROM (SELECT A.ITEM,
+               A.ITEM_NAME,
+               NVL(SALEQTYTOT,0) AS SALEQTYTOT,
+							 NVL(SALEAMTTOT,0) AS SALEAMTTOT,
+               DECODE(NVL(B.SALEAMTTOT,0),0,0,ROUND((NVL(B.SALEAMTTOT,0)-NVL(B.COSTAMTTOT,0))/NVL(B.SALEAMTTOT,0),4)*100) AS SALE_PER,
+							 (DECODE(NVL(B.SALEAMTTOT,0),0,0,ROUND((NVL(B.SALEAMTTOT,0)-NVL(B.COSTAMTTOT,0))/NVL(B.SALEAMTTOT,0),4)*100)/100)*NVL(SALEAMTTOT,0) GP
+          FROM (SELECT SB005.ITEM,SB005.ITEM_NAME,status,Price,ITEM_LEVEL,SB005.ACCT_GRP
+                  FROM SB005
+                  WHERE 
+                  SB005.ACCT_DEPT     LIKE '%'
+                  AND SB005.ACCT_CATEGORY LIKE '%'
+                  AND SB005.MARKOUTTYPE LIKE '%'
+                  
+               )A,
+              (SELECT ITEMNO,
+                      SUM(SALEQTYTOT) AS SALEQTYTOT,SUM(SALEAMTTOT) AS SALEAMTTOT,SUM(COSTAMTTOT) AS COSTAMTTOT,
+                      MAX(UNITPRICE) AS UNITPRICE,SUM(MKTQTYTOT) AS MKTQTYTOT,SUM(MKTAMTTOT) AS MKTAMTTOT,
+                      SUM(DLVQTYTOT) AS DLVQTYTOT,SUM(DLVAMTTOT) AS DLVAMTTOT,
+                      SUM(NVL(STORE_CNT,0)) SALE_STORE_NUM
+                 FROM ANA03
+                WHERE ZONENO  = '00'
+                  AND STORENO = '000000'   
+                  AND STORENO not in (select storeid from ia_n_storeid)
+                  AND BUSIDATE BETWEEN TO_DATE('20230628','YYYYMMDD') AND TO_DATE('20230711','YYYYMMDD')
+                  AND CATNO   LIKE '%'
+                GROUP BY ITEMNO)B
+          WHERE A.ITEM = B.ITEMNO
+          )A,
+		(SELECT ITEM_NO,max(BC_PER) BC_PER FROM SCQ20A_T2 group by ITEM_NO) B
+          where A.item = B.ITEM_NO(+)
+					ORDER BY SALEAMTTOT DESC) lgp,
+		(select G.item, sum(G.MMTOTQTY) as MMTOTQTY from (
+select ROWNUM as ROW_SEQ,a.item,a.store,a.zoneno,a.mmno,a.screenname,
+       decode(a.storename,'00','00全区',a.storename) storename,a.UNITPRICE,a.mmunitprice,a.mmtotqty,a.saletotcost,a.mmsaletotamt,
+       a.mmtotrebate,a.totamt,a.gp
+from (select g.item,b.store,a.mmno,a.screenname,decode(a.zoneno,'',b.work_area_zone,a.zoneno) zoneno,
+              decode(b.store||b.store_name,'000000全店',a.zoneno||c.work_area_desc,b.store_name) storename,
+              a.UNITPRICE,DECODE(a.MMTOTQTY,0,0,a.saletotamt/a.mmtotqty) MMUnitPrice,
+              a.mmtotqty,a.saletotcost,a.saletotamt MMSaleTotAmt,a.mmtotrebate,(a.saletotamt-a.mmtotrebate) TotAmt,
+              round(decode(a.saletotamt,0,0,(a.saletotamt-a.saletotcost)/a.saletotamt),4)*100 as GP
+         from (select decode(a.storeno,'000000',a.zoneno,a.storename) storename,a.zoneno,a.storeno,a.mmno,a.screenname,
+                      B.UNITPRICE,a.mmtotqty,a.saletotcost,a.saletotamt,a.mmtotrebate
+                 from anammt1 a,(select mmid,discountamount UNITPRICE from mm) b
+                where a.zoneno like '%'
+                  and a.storeno like '%'
+                  and A.mmno like '%'
+                  AND a.MMNO=B.MMID(+)
+                ORDER BY STORENO,ZONENO) a,
+              (SELECT A.STORE,A.STORE_NAME,A.WORK_AREA_ZONE FROM SB001 A
+                where sysdate between A.STORE_OPEN_DATE AND A.STORE_CLOSE_DATE
+                  and a.store like '%'
+               )B,
+              (select b.work_area_zone,b.work_area_desc from sb051 b
+                where  B.WORK_AREA_DO ='00'
+                  AND B.WORK_AREA_FM ='00'
+                  AND NOT(B.WORK_AREA_ZONE ='98' OR B.WORK_AREA_ZONE ='99'))C,
+									MMGROUP g
+   where b.store=a.storeno(+)
+     and a.zoneno=c.work_area_zone(+)
+		 and a.MMNO = g.MMID
+ORDER BY B.STORE,A.ZONENO ) a
+  where  a.zoneno = '00'
+	and a.STORE = '000000'
+	) G
+	GROUP BY G.ITEM) gor,
+	(select a.item_no,sum(a.totalqua) as totalqua
+from (
+select hqm02.item_no,sb005v.item_name,hqm01.order_date,hqm01.order_no,dlv_date,deliv_date,
+       decode(hqm01.deliv_yn,'Y','已收','N','待收','D','删单','') deliv_desc,
+       order_qty,deliv_qty/hqm02.unit_class deliv_qty,hqm02.unit_class,hqm01.vendor_code,sb003v.vendor_name,hqm01.req_date,hqm02.req_qty,
+			 (order_qty * hqm02.unit_class) AS totalqua
+  from hqm01,hqm02,sb005v,sb003v
+where hqm01.order_date > to_char(sysdate-90,'yyyymmdd')
+   and hqm01.order_no = hqm02.order_no
+   and hqm02.item_no=sb005v.item(+)
+   and hqm01.vendor_code=sb003v.vendor_code(+)
+   and hqm01.order_date between a.veff_date_from and a.veff_date_to
+   order by hqm01.order_date,hqm02.item_no,hqm01.vendor_code desc
+)a
+GROUP BY a.item_no) qua
+ where a.item = b.item
+   and a.item = e.itemnumber(+)
+   and a.item = f.item
+   and b.vendor_code = c.vendor_code
+   and b.taxid = d.taxid
+   and a.item = g.item
+   and s.eff_date =g.eff_date
+   and a.item= s.item
+	 and a.ITEM = gor.ITEM(+)
+   and a.item = ry.item(+)
+	 and a.item = lgp.item(+)
+	 and a.item = qua.ITEM_NO
+   and (a.item like '%' or b.item_name like '%')
+   and ((a.mm_start_date between '20230712' and '20230725'
+         or a.mm_end_date between '20230712' and '20230725')
+       or (a.mm_start_date <= '20230725' and a.mm_end_date >= '20230725')) 
+   and (('false'='false' and (b.acct_grp in (select distinct d.pmano from mcm05 a, mcm05 b, prm01 c, mcm02 d
+                 where ('H004'='H004' or c.uesrid = '23070061')
+                   and b.emp_no = d.emp_no
+                   and a.emp_no = c.emp_no
+                   and b.work_type like a.work_type||'%'
+                   and to_char(SYSDATE, 'YYYYMM') between d.st_yymm and d.ed_yymm
+                   and to_char(SYSDATE, 'YYYYMM') between b.st_ym and b.ed_ym
+                   and to_char(SYSDATE, 'YYYYMM') between a.st_ym and a.ed_ym))) 
+           or ('null'='Y' and a.upd_user='23070061') 
+           or ('null'='N' and b.acct_grp in (select distinct d.pmano from mcm05 a, mcm05 b, prm01 c, mcm02 d
+                where c.uesrid in (select m.resp_emp_no from mcu40 m,prm01 p where m.emp_no=p.emp_no and p.uesrid='23070061')
+                  and b.emp_no = d.emp_no
+                  and a.emp_no = c.emp_no
+                  and b.work_type like a.work_type||'%'
+                  and to_char(SYSDATE, 'YYYYMM') between d.st_yymm and d.ed_yymm
+                  and to_char(SYSDATE, 'YYYYMM') between b.st_ym and b.ed_ym
+                  and to_char(SYSDATE, 'YYYYMM') between a.st_ym and a.ed_ym)))
+	-- and b.ACCT_DEPT = '%'
+ order by c.vendor_code,a.upd_date desc,a.upd_time desc
+ ) X
+ -- gor 表
+里面的and hqm01.order_date between a.veff_date_from and a.veff_date_to怎么写才正确[0m
+2023-07-17 14:47:20,544 [ERROR] [models.py:90] 获取API使用情况失败:HTTPSConnectionPool(host='api.openai.com', port=443): Max retries exceeded with url: /dashboard/billing/usage?start_date=2023-07-01&end_date=2023-07-31 (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))
+2023-07-17 14:47:20,643 [INFO] [base_model.py:442] 回答为：[34m☹️发生了错误：获取对话时发生错误，请查看后台日志[0m
+2023-07-17 14:47:20,644 [INFO] [base_model.py:467] Token 计数: 5362，本次对话累计消耗了 9823 tokens
+2023-07-17 14:50:29,609 [INFO] [models.py:559] 正在加载OpenAI模型: gpt-3.5-turbo-16k
+2023-07-17 14:50:29,614 [INFO] [models.py:612] 模型设置为了： gpt-3.5-turbo-16k
+2023-07-17 14:50:35,240 [INFO] [base_model.py:378] 用户的输入为：[34mselect X.* ,
+to_char((X.gp-X.lastyearegp),'fm999999999990.00') as gpdiff
+from (select 
+      a.rowid row_noid,
+      a.item,
+      b.ACCT_GRP,
+      b.ACCT_DEPT,
+      b.item_name,
+      b.vendor_code,
+      c.vendor_name,
+      to_char(f.cost,'fm9999999999999990.000000') cost,
+      to_char(a.mm_cost,'fm9999999999999990.000000') mm_cost,
+      to_char((f.cost-a.mm_cost)/f.cost*100,'fm9990.00')||'%' de_cost,to_char(s.price,'fm999999999990.00') price,
+      to_char(a.mm_price,'fm999999999990.00') mm_price,
+      to_char((b.price-a.mm_price)/b.price*100,'fm999990.00')||'%' de_price,
+      substr(a.veff_date_from,1,4)||'-'||substr(a.veff_date_from,5,2)||'-'||substr(a.veff_date_from,7,2)||'~'||substr(a.veff_date_to,1,4)||'-'||substr(a.veff_date_to,5,2)||'-'||substr(a.veff_date_to,7,2) veff_date,
+			substr(a.mm_start_date,1,4)||'-'||substr(a.mm_start_date,5,2)||'-'||substr(a.mm_start_date,7,2)||'~'||substr(a.mm_end_date,1,4)||'-'||substr(a.mm_end_date,5,2)||'-'||substr(a.mm_end_date,7,2) mm_date,
+      decode(a.mod_price_reason,'1','促销','2','厂商成本调价','3','其它') reason,
+			to_char(nvl(e.dms,0),'fm99990') dms,
+			to_char(a.pre_dms,'fm99990') pre_dms,
+      to_char((b.price-f.cost*(1+d.taxrate))/b.price*100,'fm9990.00')||'%' gp1,
+			decode(b.price-a.mm_price,'0','#DIV/0!',to_char((f.cost-a.mm_cost)*(1+d.taxrate)/(b.price-a.mm_price)*100,'fm9990.00')||'%') tran_profit,
+      decode(a.mm_price,'0','#DIV/0!',to_char((a.mm_price-a.mm_cost*(1+d.taxrate))/a.mm_price*100,'fm9990.00')||'%') gp2,
+			decode(a.mod_price_reason,'2',to_char(to_date(a.veff_date_to,'yyyymmdd')- to_date(a.veff_date_from,'yyyymmdd')+1),decode(a.sales_days,'999','长期',a.sales_days)) sales_days,  
+      decode(a.mod_price_reason,'2',decode(a.mm_price,'0','#DIV/0!',decode(a.sales_days,'999','长期促销',to_char(a.mm_price*a.pre_dms*((a.mm_price-a.mm_cost*(1+d.taxrate))/a.mm_price)*(to_date(a.veff_date_to,'yyyymmdd')-to_date(a.veff_date_from,'yyyymmdd')+1)-b.price*to_char(nvl(e.dms,0),'fm99990')*((b.price-f.cost*(1+d.taxrate))/b.price)*(to_date(a.veff_date_to,'yyyymmdd')-to_date(a.veff_date_from,'yyyymmdd')+1),'fm9999999990'))),decode(a.mm_price,'0','#DIV/0!',decode(a.sales_days,'999','长期促销',to_char(a.mm_price*a.pre_dms*((a.mm_price-a.mm_cost*(1+d.taxrate))/a.mm_price)*a.sales_days-b.price*to_char(nvl(e.dms,0),'fm99990')*((b.price-f.cost*(1+d.taxrate))/b.price)*a.sales_days,'fm9999999990')))) gross_profit,
+      a.mm_method,
+      decode(a.dist_method,'1','厂商让利','2','事后补差') dist_method,
+      a.remark,
+      a.mod_price_reason reason2,
+      a.dist_method method2,
+      a.upd_user,a.upd_date,
+      a.upd_time,
+      a.sales_days sales_days2,
+      nvl(ry.GP,-999) GP,
+      nvl(ry.SALE_PER,-999)||'%' SALE_PER,
+      nvl(ry.SALEQTYTOT,-999) SALEQTYTOT,
+			COALESCE(lgp.GP, -999) AS lastyearegp,
+			gor.MMTOTQTY as MMTOTQTY,
+			qua.TOTALQUA
+  from mm_control a,sb005 b,sb003 c,taxtype d,ana17 e,
+  (select a.item,a.cost
+   from SB005ZONE_COST a,
+   (SELECT A.ITEM, max(A.EFF_DATE) EFF_DATE2
+   FROM SB005ZONE_COST A
+   WHERE A.STATUS LIKE '1'
+   group by a.item) b
+   where a.eff_date = b.EFF_DATE2 and a.item = b.item) f,
+ (SELECT a.* FROM (SELECT max(a.eff_date) as eff_date,a.item FROM sb005zone_price a where a.item like '%' and a.status = 1 group by a.item)a) g,
+ sb005zone_price s,
+ (SELECT A.*
+FROM (SELECT A.ITEM,
+               A.ITEM_NAME,
+               NVL(SALEQTYTOT,0) AS SALEQTYTOT,
+							 NVL(SALEAMTTOT,0) AS SALEAMTTOT,
+               DECODE(NVL(B.SALEAMTTOT,0),0,0,ROUND((NVL(B.SALEAMTTOT,0)-NVL(B.COSTAMTTOT,0))/NVL(B.SALEAMTTOT,0),4)*100) AS SALE_PER,
+							 (DECODE(NVL(B.SALEAMTTOT,0),0,0,ROUND((NVL(B.SALEAMTTOT,0)-NVL(B.COSTAMTTOT,0))/NVL(B.SALEAMTTOT,0),4)*100)/100)*NVL(SALEAMTTOT,0) GP
+          FROM (SELECT SB005.ITEM,SB005.ITEM_NAME,status,Price,ITEM_LEVEL,SB005.ACCT_GRP
+                  FROM SB005
+                  WHERE 
+                  SB005.ACCT_DEPT     LIKE '%'
+                  AND SB005.ACCT_CATEGORY LIKE '%'
+                  AND SB005.MARKOUTTYPE LIKE '%'
+                  
+               )A,
+              (SELECT ITEMNO,
+                      SUM(SALEQTYTOT) AS SALEQTYTOT,SUM(SALEAMTTOT) AS SALEAMTTOT,SUM(COSTAMTTOT) AS COSTAMTTOT,
+                      MAX(UNITPRICE) AS UNITPRICE,SUM(MKTQTYTOT) AS MKTQTYTOT,SUM(MKTAMTTOT) AS MKTAMTTOT,
+                      SUM(DLVQTYTOT) AS DLVQTYTOT,SUM(DLVAMTTOT) AS DLVAMTTOT,
+                      SUM(NVL(STORE_CNT,0)) SALE_STORE_NUM
+                 FROM ANA03
+                WHERE ZONENO  = '00'
+                  AND STORENO = '000000'   
+                  AND STORENO not in (select storeid from ia_n_storeid)
+                  AND BUSIDATE BETWEEN TO_DATE('20230712','YYYYMMDD') AND TO_DATE('20230725','YYYYMMDD')
+                  AND CATNO   LIKE '%'
+                GROUP BY ITEMNO)B
+          WHERE A.ITEM = B.ITEMNO
+          )A,
+		(SELECT ITEM_NO,max(BC_PER) BC_PER FROM SCQ20A_T2 group by ITEM_NO) B
+          where A.item = B.ITEM_NO(+)
+					ORDER BY SALEAMTTOT DESC) ry
+ ,
+ (SELECT A.*
+FROM (SELECT A.ITEM,
+               A.ITEM_NAME,
+               NVL(SALEQTYTOT,0) AS SALEQTYTOT,
+							 NVL(SALEAMTTOT,0) AS SALEAMTTOT,
+               DECODE(NVL(B.SALEAMTTOT,0),0,0,ROUND((NVL(B.SALEAMTTOT,0)-NVL(B.COSTAMTTOT,0))/NVL(B.SALEAMTTOT,0),4)*100) AS SALE_PER,
+							 (DECODE(NVL(B.SALEAMTTOT,0),0,0,ROUND((NVL(B.SALEAMTTOT,0)-NVL(B.COSTAMTTOT,0))/NVL(B.SALEAMTTOT,0),4)*100)/100)*NVL(SALEAMTTOT,0) GP
+          FROM (SELECT SB005.ITEM,SB005.ITEM_NAME,status,Price,ITEM_LEVEL,SB005.ACCT_GRP
+                  FROM SB005
+                  WHERE 
+                  SB005.ACCT_DEPT     LIKE '%'
+                  AND SB005.ACCT_CATEGORY LIKE '%'
+                  AND SB005.MARKOUTTYPE LIKE '%'
+                  
+               )A,
+              (SELECT ITEMNO,
+                      SUM(SALEQTYTOT) AS SALEQTYTOT,SUM(SALEAMTTOT) AS SALEAMTTOT,SUM(COSTAMTTOT) AS COSTAMTTOT,
+                      MAX(UNITPRICE) AS UNITPRICE,SUM(MKTQTYTOT) AS MKTQTYTOT,SUM(MKTAMTTOT) AS MKTAMTTOT,
+                      SUM(DLVQTYTOT) AS DLVQTYTOT,SUM(DLVAMTTOT) AS DLVAMTTOT,
+                      SUM(NVL(STORE_CNT,0)) SALE_STORE_NUM
+                 FROM ANA03
+                WHERE ZONENO  = '00'
+                  AND STORENO = '000000'   
+                  AND STORENO not in (select storeid from ia_n_storeid)
+                  AND BUSIDATE BETWEEN TO_DATE('20230628','YYYYMMDD') AND TO_DATE('20230711','YYYYMMDD')
+                  AND CATNO   LIKE '%'
+                GROUP BY ITEMNO)B
+          WHERE A.ITEM = B.ITEMNO
+          )A,
+		(SELECT ITEM_NO,max(BC_PER) BC_PER FROM SCQ20A_T2 group by ITEM_NO) B
+          where A.item = B.ITEM_NO(+)
+					ORDER BY SALEAMTTOT DESC) lgp,
+		(select G.item, sum(G.MMTOTQTY) as MMTOTQTY from (
+select ROWNUM as ROW_SEQ,a.item,a.store,a.zoneno,a.mmno,a.screenname,
+       decode(a.storename,'00','00全区',a.storename) storename,a.UNITPRICE,a.mmunitprice,a.mmtotqty,a.saletotcost,a.mmsaletotamt,
+       a.mmtotrebate,a.totamt,a.gp
+from (select g.item,b.store,a.mmno,a.screenname,decode(a.zoneno,'',b.work_area_zone,a.zoneno) zoneno,
+              decode(b.store||b.store_name,'000000全店',a.zoneno||c.work_area_desc,b.store_name) storename,
+              a.UNITPRICE,DECODE(a.MMTOTQTY,0,0,a.saletotamt/a.mmtotqty) MMUnitPrice,
+              a.mmtotqty,a.saletotcost,a.saletotamt MMSaleTotAmt,a.mmtotrebate,(a.saletotamt-a.mmtotrebate) TotAmt,
+              round(decode(a.saletotamt,0,0,(a.saletotamt-a.saletotcost)/a.saletotamt),4)*100 as GP
+         from (select decode(a.storeno,'000000',a.zoneno,a.storename) storename,a.zoneno,a.storeno,a.mmno,a.screenname,
+                      B.UNITPRICE,a.mmtotqty,a.saletotcost,a.saletotamt,a.mmtotrebate
+                 from anammt1 a,(select mmid,discountamount UNITPRICE from mm) b
+                where a.zoneno like '%'
+                  and a.storeno like '%'
+                  and A.mmno like '%'
+                  AND a.MMNO=B.MMID(+)
+                ORDER BY STORENO,ZONENO) a,
+              (SELECT A.STORE,A.STORE_NAME,A.WORK_AREA_ZONE FROM SB001 A
+                where sysdate between A.STORE_OPEN_DATE AND A.STORE_CLOSE_DATE
+                  and a.store like '%'
+               )B,
+              (select b.work_area_zone,b.work_area_desc from sb051 b
+                where  B.WORK_AREA_DO ='00'
+                  AND B.WORK_AREA_FM ='00'
+                  AND NOT(B.WORK_AREA_ZONE ='98' OR B.WORK_AREA_ZONE ='99'))C,
+									MMGROUP g
+   where b.store=a.storeno(+)
+     and a.zoneno=c.work_area_zone(+)
+		 and a.MMNO = g.MMID
+ORDER BY B.STORE,A.ZONENO ) a
+  where  a.zoneno = '00'
+	and a.STORE = '000000'
+	) G
+	GROUP BY G.ITEM) gor,
+	(select a.item_no,sum(a.totalqua) as totalqua
+from (
+select hqm02.item_no,sb005v.item_name,hqm01.order_date,hqm01.order_no,dlv_date,deliv_date,
+       decode(hqm01.deliv_yn,'Y','已收','N','待收','D','删单','') deliv_desc,
+       order_qty,deliv_qty/hqm02.unit_class deliv_qty,hqm02.unit_class,hqm01.vendor_code,sb003v.vendor_name,hqm01.req_date,hqm02.req_qty,
+			 (order_qty * hqm02.unit_class) AS totalqua
+  from hqm01,hqm02,sb005v,sb003v
+where hqm01.order_date > to_char(sysdate-90,'yyyymmdd')
+   and hqm01.order_no = hqm02.order_no
+   and hqm02.item_no=sb005v.item(+)
+   and hqm01.vendor_code=sb003v.vendor_code(+)
+   and hqm01.order_date between a.veff_date_from and a.veff_date_to
+   order by hqm01.order_date,hqm02.item_no,hqm01.vendor_code desc
+)a
+GROUP BY a.item_no) qua
+ where a.item = b.item
+   and a.item = e.itemnumber(+)
+   and a.item = f.item
+   and b.vendor_code = c.vendor_code
+   and b.taxid = d.taxid
+   and a.item = g.item
+   and s.eff_date =g.eff_date
+   and a.item= s.item
+	 and a.ITEM = gor.ITEM(+)
+   and a.item = ry.item(+)
+	 and a.item = lgp.item(+)
+	 and a.item = qua.ITEM_NO
+   and (a.item like '%' or b.item_name like '%')
+   and ((a.mm_start_date between '20230712' and '20230725'
+         or a.mm_end_date between '20230712' and '20230725')
+       or (a.mm_start_date <= '20230725' and a.mm_end_date >= '20230725')) 
+   and (('false'='false' and (b.acct_grp in (select distinct d.pmano from mcm05 a, mcm05 b, prm01 c, mcm02 d
+                 where ('H004'='H004' or c.uesrid = '23070061')
+                   and b.emp_no = d.emp_no
+                   and a.emp_no = c.emp_no
+                   and b.work_type like a.work_type||'%'
+                   and to_char(SYSDATE, 'YYYYMM') between d.st_yymm and d.ed_yymm
+                   and to_char(SYSDATE, 'YYYYMM') between b.st_ym and b.ed_ym
+                   and to_char(SYSDATE, 'YYYYMM') between a.st_ym and a.ed_ym))) 
+           or ('null'='Y' and a.upd_user='23070061') 
+           or ('null'='N' and b.acct_grp in (select distinct d.pmano from mcm05 a, mcm05 b, prm01 c, mcm02 d
+                where c.uesrid in (select m.resp_emp_no from mcu40 m,prm01 p where m.emp_no=p.emp_no and p.uesrid='23070061')
+                  and b.emp_no = d.emp_no
+                  and a.emp_no = c.emp_no
+                  and b.work_type like a.work_type||'%'
+                  and to_char(SYSDATE, 'YYYYMM') between d.st_yymm and d.ed_yymm
+                  and to_char(SYSDATE, 'YYYYMM') between b.st_ym and b.ed_ym
+                  and to_char(SYSDATE, 'YYYYMM') between a.st_ym and a.ed_ym)))
+	-- and b.ACCT_DEPT = '%'
+ order by c.vendor_code,a.upd_date desc,a.upd_time desc
+ ) X
+ -- gor 表[0m
+2023-07-17 14:50:35,696 [ERROR] [models.py:90] 获取API使用情况失败:HTTPSConnectionPool(host='api.openai.com', port=443): Max retries exceeded with url: /dashboard/billing/usage?start_date=2023-07-01&end_date=2023-07-31 (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))
+2023-07-17 14:50:35,798 [INFO] [base_model.py:442] 回答为：[34m☹️发生了错误：获取对话时发生错误，请查看后台日志[0m
+2023-07-17 15:28:14,195 [INFO] [base_model.py:378] 用户的输入为：[34mselect X.* 
+from (select 
+      a.rowid row_noid,
+      a.item,
+      b.ACCT_GRP,
+      b.ACCT_DEPT,
+      b.item_name,
+      b.vendor_code,
+      substr(a.veff_date_from,1,4)||'-'||substr(a.veff_date_from,5,2)||'-'||substr(a.veff_date_from,7,2)||'~'||substr(a.veff_date_to,1,4)||'-'||substr(a.veff_date_to,5,2)||'-'||substr(a.veff_date_to,7,2) veff_date,
+			substr(a.mm_start_date,1,4)||'-'||substr(a.mm_start_date,5,2)||'-'||substr(a.mm_start_date,7,2)||'~'||substr(a.mm_end_date,1,4)||'-'||substr(a.mm_end_date,5,2)||'-'||substr(a.mm_end_date,7,2) mm_date,
+      a.upd_time,
+      a.sales_days sales_days2,
+			qua.TOTALQUA
+  from mm_control a,sb005 b,sb003 c,taxtype d,ana17 e,
+	(select a.item_no,sum(a.TOTALQUA) as TOTALQUA
+from (
+select hqm02.item_no,sb005v.item_name,hqm01.order_date,hqm01.order_no,dlv_date,deliv_date,
+       decode(hqm01.deliv_yn,'Y','已收','N','待收','D','删单','') deliv_desc,
+       order_qty,deliv_qty/hqm02.unit_class deliv_qty,hqm02.unit_class,hqm01.vendor_code,sb003v.vendor_name,hqm01.req_date,hqm02.req_qty,
+			 (order_qty * hqm02.unit_class) totalqua
+  from hqm01,hqm02,sb005v,sb003v
+where hqm01.order_date > to_char(sysdate-90,'yyyymmdd')
+   and hqm01.order_no = hqm02.order_no
+   and hqm02.item_no=sb005v.item(+)
+   and hqm01.vendor_code=sb003v.vendor_code(+)
+   -- and (hqm01.order_date='' or '' is null)
+   and hqm01.order_date between a.veff_date_from and a.veff_date_to
+order by hqm01.order_date,hqm02.item_no,hqm01.vendor_code desc
+)a
+GROUP BY a.ITEM_NO) qua
+ where a.item = b.item
+   and a.item = e.itemnumber(+)
+   and b.vendor_code = c.vendor_code
+   and b.taxid = d.taxid
+	 and a.item = qua.ITEM_NO
+   and (a.item like '%' or b.item_name like '%')
+	-- and b.ACCT_DEPT = '%'
+ order by c.vendor_code,a.upd_date desc,a.upd_time desc
+ ) X
+ -- gor 表
+
+[0m
+2023-07-17 15:28:14,630 [ERROR] [models.py:90] 获取API使用情况失败:HTTPSConnectionPool(host='api.openai.com', port=443): Max retries exceeded with url: /dashboard/billing/usage?start_date=2023-07-01&end_date=2023-07-31 (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))
+2023-07-17 15:28:14,744 [INFO] [base_model.py:442] 回答为：[34m☹️发生了错误：获取对话时发生错误，请查看后台日志[0m
+2023-07-17 17:12:20,621 [INFO] [base_model.py:378] 用户的输入为：[34m	发送地址错误：3350363131@qq.com
+SMTP -> NOTICE: EOF caught while checking if connected[0m
+2023-07-17 17:12:24,899 [INFO] [base_model.py:442] 回答为：[34m很抱歉，但我只能在文本消息中提供帮助，无法发送电子邮件。如果您有任何其他问题，请随时向我提问。[0m
